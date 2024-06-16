@@ -5,9 +5,9 @@
     "dev": "next dev",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
-    // Changed start script to work with server.js
-    //"start": "next start",
     "start": "NODE_ENV=production node server.js"
+    // Changed start script to work with server.js
+    //"start": "next start"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
