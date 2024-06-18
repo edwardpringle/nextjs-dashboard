@@ -2,6 +2,8 @@ const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
  
+//testing the .cpanel.yml file to push to web
+
 const dev = process.env.NODE_ENV !== 'production'
 const hostname = 'localhost'
 const port = process.env.PORT || 3000
