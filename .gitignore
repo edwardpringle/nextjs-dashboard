@@ -75,3 +75,9 @@ next-env.d.ts
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+## Added on 18th June 2024 to prevent files moving to the server
+/.github/
+/.git/
+.gitignore
+README.md
