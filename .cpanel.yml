@@ -1,0 +1,15 @@
+---
+deployment:
+  tasks:
+  #to deploy files
+    - export DEPLOYPATH=/home/prinplhn/repositories/nextjs-dashboard
+    - /bin/cp server.js $DEPLOYPATH
+    - /bin/cp tailwind.config.ts $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp package-lock.json $DEPLOYPATH
+    - /bin/cp next.config.js $DEPLOYPATH
+  #to deploy directory
+    - export DEPLOYPATH=/home/prinplhn/repositories/nextjs-dashboard
+    - /bin/cp -R app $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -R scripts $DEPLOYPATH
