@@ -1,6 +1,6 @@
 const { config } = require('dotenv');
 
 /** @type {import('next').NextConfig} */
-const nextConfig = { path: `${process.env.ENVIRONMENT}`};
+const nextConfig = {};
 
 module.exports = nextConfig;
