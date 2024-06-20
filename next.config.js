@@ -1,6 +1,16 @@
-const { config } = require('dotenv');
+// const { config } = require('dotenv');
 
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {};
+
+// module.exports = nextConfig;
+
+
+// @ts-check
+ 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = nextConfig;
+const nextConfig = {
+    /* config options here */
+  }
+   
+  module.exports = nextConfig
