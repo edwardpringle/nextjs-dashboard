@@ -18,7 +18,7 @@ app.prepare().then(() => {
       // This tells it to parse the query portion of the URL.
       const parsedUrl = parse(req.url, true)
       const { pathname, query } = parsedUrl
-      Console.log (`The parsedURL is ${parsedUrl}`)
+      console.log (`The parsedURL is ${parsedUrl}`)
       if (pathname === '/a') {
         await app.render(req, res, '/a', query)
       } else if (pathname === '/b') {
