@@ -37,6 +37,6 @@ app.prepare().then(() => {
       process.exit(1)
     })
     .listen(port, () => {
-      console.log(`> Ready on http://${hostname}:${port}, /n The URL parsed was: ${parsedUrl}`)
+      console.log(`> Ready on http://${hostname}:${port}. The URL parsed was: ${parsedUrl}`)
     })
 })
