@@ -16,9 +16,9 @@ export default function Page() {
           <div/>
           <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             <strong>Welcome to Maple App</strong> This is the testing site{' '}
-            <a href="https://pringle.vu" className="text-grey-800">
+            <Link href="https://pringle.vu" className="text-blue-800">
               For the EHR for Maple
-            </a>
+            </Link>
             , brought to you by The Mapleleaf team.
           </p>
           <Link
