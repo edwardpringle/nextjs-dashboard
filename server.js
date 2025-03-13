@@ -1,6 +1,10 @@
-const { createServer } = require('http')
-const { parse } = require('url')
-const next = require('next')
+import { createServer } from 'node:http';
+//const { createServer } = require('node:http')
+import { parse } from 'node:url';
+//const { parse } = require('url')
+import next from 'next'
+//const next = require('next')
+
  
 //testing the .cpanel.yml file to push to web
 
@@ -37,7 +41,13 @@ app.prepare().then(() => {
       process.exit(1)
     })
     .listen(port, () => {
-      console.log(`> Ready on http://${hostname}:${port}`)
+      console.log(
+        `> Server listening at http://${hostname}:${port} as ${
+      dev ? 'development' : process.env.NODE_ENV}`
+      )
     })
 })
 
+//`> Ready on http://${hostname}:${port}`
+// `> Server listening at http://${hostname}:${port} as ${
+//      dev ? 'development' : process.env.NODE_ENV}`

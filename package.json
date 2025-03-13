@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "npm i --legacy-peer-deps && next build",
     "dev": "next dev",
