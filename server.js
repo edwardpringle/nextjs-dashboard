@@ -1,8 +1,8 @@
-/*
+
 import { createServer } from "http";
 import { parse } from "url";
 import next from "next";
-
+/*
 const port = parseInt(process.env.PORT || "3000", 10);
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
@@ -59,12 +59,11 @@ app.prepare().then(() => {
 //`> Ready on http://${hostname}:${port}`
 // `> Server listening at http://${hostname}:${port} as ${
 //      dev ? 'development' : process.env.NODE_ENV}`
-*/
 
 const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
-
+*/
 const dev = process.env.NODE_ENV !== 'production'
 const hostname = 'localhost'
 const port = 3000
