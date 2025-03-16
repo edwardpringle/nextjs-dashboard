@@ -35,7 +35,7 @@
     "app/lib/placeholder-data.js",
     "next-env.d.ts",
     "scripts/seed.js",
-    "server.js",
+    "server.ts",
     "dist/types/**/*.ts"
   ],
   "exclude": [

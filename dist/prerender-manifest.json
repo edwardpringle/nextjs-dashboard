@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/dashboard": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/dashboard",
+      "dataRoute": "/dashboard.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -72,37 +96,13 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    },
-    "/dashboard": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/dashboard",
-      "dataRoute": "/dashboard.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "115f8d894e0b6e35bd685841a6a036b5",
-    "previewModeSigningKey": "a53cdce8c049ac680e15c645e7abcd48f3d16267655bb41a0995faa4fb41eb54",
-    "previewModeEncryptionKey": "a2c3c318c50a44622dd438faefcc764b8cbc1b3e58266ebbfa9af18d1459600e"
+    "previewModeId": "105f456d434fe682e28d6adf16f01715",
+    "previewModeSigningKey": "f840d8b7e048de5f5f51578d79177e88ea8afc325d6bf32480b9b9b626489c1c",
+    "previewModeEncryptionKey": "2569fb6467cf0a88ab8924408ecb9bac156fc33033e0aa32ed2e0ea148065e60"
   }
 }
