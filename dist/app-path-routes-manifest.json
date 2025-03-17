@@ -2,6 +2,6 @@
   "/_not-found/page": "/_not-found",
   "/page": "/",
   "/dashboard/customers/page": "/dashboard/customers",
-  "/dashboard/page": "/dashboard",
-  "/dashboard/invoices/page": "/dashboard/invoices"
+  "/dashboard/invoices/page": "/dashboard/invoices",
+  "/dashboard/page": "/dashboard"
 }

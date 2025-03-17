@@ -40,19 +40,19 @@
       "static/chunks/main-app-cf8aa07e1403dfe8.js",
       "static/chunks/app/dashboard/customers/page-b48c9e6bda2950b4.js"
     ],
-    "/dashboard/page": [
-      "static/chunks/webpack-107e257fc4860ebb.js",
-      "static/chunks/4bd1b696-6e29d28b1887a657.js",
-      "static/chunks/684-d2e3e5ab644fa80c.js",
-      "static/chunks/main-app-cf8aa07e1403dfe8.js",
-      "static/chunks/app/dashboard/page-c81e33f20f143220.js"
-    ],
     "/dashboard/invoices/page": [
       "static/chunks/webpack-107e257fc4860ebb.js",
       "static/chunks/4bd1b696-6e29d28b1887a657.js",
       "static/chunks/684-d2e3e5ab644fa80c.js",
       "static/chunks/main-app-cf8aa07e1403dfe8.js",
       "static/chunks/app/dashboard/invoices/page-4c7e82cc687495c5.js"
+    ],
+    "/dashboard/page": [
+      "static/chunks/webpack-107e257fc4860ebb.js",
+      "static/chunks/4bd1b696-6e29d28b1887a657.js",
+      "static/chunks/684-d2e3e5ab644fa80c.js",
+      "static/chunks/main-app-cf8aa07e1403dfe8.js",
+      "static/chunks/app/dashboard/page-c81e33f20f143220.js"
     ]
   }
 }

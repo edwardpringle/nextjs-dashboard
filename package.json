@@ -7,7 +7,7 @@
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
     "NSstart": "next start",
-    "start": "NODE_ENV=production & npx tsx server.ts"
+    "start": "SET NODE_ENV=production & npx tsx server.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
