@@ -22,10 +22,10 @@ export default function Page() {
             , brought to you by The Mapleleaf team.
           </p>
           <Link
-            href="/dashboard"
+            href="@/dashboard"
             className="flex items-center gap-5 self-start rounded-lg bg-green-800 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
-            <span>Log in</span>
+            <span>Dashboard</span>
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
