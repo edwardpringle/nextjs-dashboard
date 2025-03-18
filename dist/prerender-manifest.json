@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/dashboard/invoices": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/dashboard/invoices",
+      "dataRoute": "/dashboard/invoices.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -72,37 +96,13 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    },
-    "/dashboard/invoices": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/dashboard/invoices",
-      "dataRoute": "/dashboard/invoices.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "e5334b88ae9d1b2e5f6ab886c7db8120",
-    "previewModeSigningKey": "d4986779f072b0de49af730b238279a468a47d657411d8e50ddba0794c66f563",
-    "previewModeEncryptionKey": "d195c7ccda4da0f076979718d72cdd9e74ef85e30269dbe9b39d337f043de6f9"
+    "previewModeId": "40ab4604ac967d844ac23ad8ebdd9608",
+    "previewModeSigningKey": "9740d3f4ad077eb9d1dfecc3538d29cce222b5e0296e0f0542b601262edf9836",
+    "previewModeEncryptionKey": "19273b85e4cc9c7ee35938c60726957f74faa0fcb3860c9a677f1e0d49d900fb"
   }
 }
