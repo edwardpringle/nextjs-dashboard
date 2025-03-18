@@ -1,4 +1,5 @@
-/*
+// Using Javascript file for namecheap hosting. Unable to run a custom typescript server.ts file
+
 import { createServer } from 'http'
 import { parse } from 'url'
 import next from 'next'
@@ -20,9 +21,9 @@ app.prepare().then(() => {
     }`
   )
 })
-**/
 
-//or as a typescript file:
+/* Typescript server.ts file is not working on namecheap- only works in as javascript file as
+//Custom server as a typescript file:
 import { createServer } from 'http'
 import { parse } from 'url'
 import next from 'next'
@@ -44,3 +45,4 @@ app.prepare().then(() => {
     }`
   )
 })
+**/
